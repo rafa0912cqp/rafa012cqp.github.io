@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ECU CAPS</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+/* Fondo neon */
+
+body::before{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at 20% 20%, #ff660055 0%, transparent 30%),
+radial-gradient(circle at 80% 30%, #00ffff44 0%, transparent 30%),
+radial-gradient(circle at 50% 80%, #ff00ff44 0%, transparent 30%);
+z-index:-1;
+}
+
+/* Header */
+
+header{
+text-align:center;
+padding:40px 20px;
+}
+
+.logo{
+width:180px;
+height:180px;
+border-radius:50%;
+border:4px solid #ff6600;
+box-shadow:
+0 0 15px #ff6600,
+0 0 35px #ff6600,
+0 0 60px #ff6600;
+}
+
+h1{
+font-size:4rem;
+margin-top:20px;
+color:#fff;
+text-shadow:
+0 0 10px #00ffff,
+0 0 20px #00ffff,
+0 0 40px #00ffff;
+}
+
+.slogan{
+margin-top:10px;
+font-size:1.2rem;
+color:#ccc;
+}
+
+/* Hero */
+
+.hero{
+padding:80px 20px;
+text-align:center;
+}
+
+.hero h2{
+font-size:2.8rem;
+color:#ff6600;
+text-shadow:0 0 15px #ff6600;
+}
+
+.hero p{
+margin-top:20px;
+font-size:1.1rem;
+color:#ddd;
+}
+
+/* Catalogo */
+
+.catalogo{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:50px;
+}
+
+.card{
+background:#111;
+border-radius:20px;
+overflow:hidden;
+border:1px solid #222;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:
+0 0 15px #00ffff,
+0 0 30px #00ffff;
+}
+
+.card img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+font-size:1.4rem;
+}
+
+.card p{
+padding:0 15px 20px;
+color:#aaa;
+}
+
+/* Instagram */
+
+.instagram{
+text-align:center;
+padding:60px 20px;
+}
+
+.btn{
+display:inline-block;
+padding:18px 35px;
+background:#ff6600;
+color:white;
+text-decoration:none;
+border-radius:12px;
+font-weight:bold;
+font-size:1.1rem;
+box-shadow:
+0 0 10px #ff6600,
+0 0 30px #ff6600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:30px;
+background:#080808;
+border-top:1px solid #222;
+}
+
+/* Barras decorativas */
+
+.neon-line{
+width:100%;
+height:4px;
+background:linear-gradient(
+90deg,
+#ff00ff,
+#00ffff,
+#ff6600,
+#00ffff,
+#ff00ff
+);
+box-shadow:0 0 20px #00ffff;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="neon-line"></div>
+
+<header>
+
+<!-- CAMBIA logo.jpg POR TU LOGO -->
+<img src="png.logo.jpg" class="logo">
+
+<h1>ECU CAPS</h1>
+
+<p class="slogan">
+Gorras urbanas con estilo 🔥
+</p>
+
+</header>
+
+<section class="hero">
+
+<h2>EL FLOW COMIENZA CON TU GORRA</h2>
+
+<p>
+Modelos exclusivos, urbanos y deportivos.
+</p>
+
+</section>
+
+<section class="catalogo">
+
+<div class="card">
+<img src="png.kolas.jpeg">
+
+<h3>Urban Black</h3>
+<p>Diseño moderno y elegante.</p>
+</div>
+<img src="png.lovk.jpeg">
+
+
+<img src="png.ohbd.jpeg">
+
+
+<img src="png.clasica.jpeg">
+
+
+<div class="card">
+<img src="png.clack.jpeg">
+
+<h3>Street Red</h3>
+<p>Perfecta para destacar.</p>
+</div>
+<img src="png.tommy.jpeg">
+
+<div class="card">
+<img src="png.blanca.jpg">
+
+<h3>Classic White</h3>
+<p>Combinable con cualquier outfit.</p>
+</div>
+
+</section>
+
+<section class="instagram">
+
+<h2>Síguenos en Instagram</h2>
+
+<br><br>
+
+<a class="btn"
+href="https://www.instagram.com/ecu__caps/?hl=es"
+target="_blank">
+
+@ecu_caps
+
+</a>
+
+</section>
+
+<footer>
+
+<p>© ECU CAPS | Todos los derechos reservados</p>
+
+</footer>
+<div class="neon-line"></div>
+
+</body>
+</html>
